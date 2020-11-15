@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, TouchableHighlight, Text, Picker, Image } from 'react-native';
-import Languages from './languages.json';
+import { PowerTranslator, ProviderTypes, TranslatorConfiguration, TranslatorFactory } from 'react-native-power-translator';
+import Languages from './Languages.json';
 
 export default class Translator extends Component {
 
@@ -17,6 +18,7 @@ export default class Translator extends Component {
    }
 
    render() {
+    TranslatorConfiguration.setConfig(ProviderTypes.Google, 'AlzaSyCvfXHDEUTzb9wwtgHWiWpcrTpl6ewtsvA', this.state.languageCode);
        return (
            <View style = {styles.container}>
                <View style={styles.input}>
