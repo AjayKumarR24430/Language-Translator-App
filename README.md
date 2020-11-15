@@ -1,6 +1,6 @@
-#### This project is created using React Native and npm.
+## This project is created using React Native and npm.
 
-## Design and Create a Language Translator App that can translate a word from any one of the provided languages to another.
+#### Design and Create a Language Translator App that can translate a word from any one of the provided languages to another.
 
 This minimalistic app contains a field for the user to input the text he/she wants to translate from and a translate button which acts as the interface between two languages.
 
