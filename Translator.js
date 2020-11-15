@@ -18,7 +18,7 @@ export default class Translator extends Component {
    }
 
    render() {
-    TranslatorConfiguration.setConfig(ProviderTypes.Google, 'AlzaSyCvfXHDEUTzb9wwtgHWiWpcrTpl6ewtsvA', this.state.languageCode);
+    TranslatorConfiguration.setConfig(ProviderTypes.Google, 'XXXX', this.state.languageCode,this.state.languageTo );
        return (
            <View style = {styles.container}>
                <View style={styles.input}>
@@ -42,6 +42,7 @@ export default class Translator extends Component {
 
                <View style = {styles.output}>
                   {/* output text displays here.. */}
+                  {this.state.submit && <PowerTranslator  text={this.state.inputText} />}
                </View>
                <TouchableOpacity
                    style = {styles.submitButton}
